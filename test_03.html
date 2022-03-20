@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SUMMUER ファンクラブ</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./css_03.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+      $(function(){
+        $(".top_main_border_2").on("click",".image", function(){
+          var num = $(this).parent().find(".image").length;
+          var num1 = $(this).parent().find(".image").index($(this));
+            if((num-1) == num1){
+              var next = 0;
+
+            } else {
+              var next = num1+1;
+            }
+          $(this).removeClass("show");
+          $(this).parent().find(".image").eq(next).addClass("show");
+        });
+      });
+    </script>
+
+  </head>
+  <body>
+
+<div class="main">
+
+  <!-- top_line -->
+  <div class="top_border">
+    <div class="top_border_main_left">
+      <p class="top_tatle_1">東京五輪を目指す 宮川紗麻亜</p>
+      <p class="top_tatle_2"> GLAMOROUS SUMMER<p>
+      <p class="top_tatle_3">OFFICIAL SITE</p>
+    </div>
+    <div class="top_border_main_right">
+      <img src=./IMG/TOKYO.jpg width="150px" height="200px">
+    </div>
+
+    <div class="top_main_border">
+      <div class="top_main_border_1">
+        <img src="./IMG/main.jpg" width="100%">
+      </div>
+      <div class="top_main_border_2">
+          <div class="top_main_border_2_1 image"></div>
+          <div class="top_main_border_2_2 image"></div>
+          <div class="top_main_border_2_3 image"></div>
+      </div>
+    </div>
+
+  <!-- mid_line -->
+    <div class="mid_border clearfix">
+
+      <div class="mid_left_border">
+        <div class="mid_left_border_1">
+          <h3>2018 ENTEY SCHEDULE</h3>
+          <dl>
+            <dt>☆ジャパンツアー☆</dt>
+            <dd>第5戦　７/15.16<br>
+            大会（ランキング上位16チーム）
+           </dd><br>
+            <dd> 第6戦　７/28.29<br>
+            大会（ランキング上位16チーム）<br><br>
+            </dd>
+            <dd>
+            第7戦　8/4.5<br>
+            大会（ランキング上位16チーム）<br><br>
+            </dd>
+            <dd>
+            第8戦　9/1.2<br>
+            大会（ランキング上位16チーム）<br><br>
+            </dd>
+            <dd>
+            第9戦　9/15.16.17<br>
+            大会（ランキング上位16チーム）<br><br>
+            </dd>
+          </dl>
+        </div>
+        <div class="mid_left_border_2">
+          <p>
+          ※第32回8/10.11.12<br>
+          ビーチバレージャパン 藤沢巿鵚沼海岸 <br>
+          </p>
+        <dl class="mid_left_border_2_1">
+        <dt><img style="width:100%" alt="sponsor" src="./IMG/left1.jpg"><br></dt>
+        <dd><a href="https://www.worldbrains.co.jp/" target="_blank"><img alt="worldbrains" style="width:100%" src="../TEST/IMG/left2.jpg"></a></dd>
+        <dd><a href="https://www.brainshd.co.jp/" target="_blank"><img alt="brainshd" style="width:100%" src="../TEST/IMG/left3.jpg"></a></dd>
+        ※Qinzhou（中国 日本）3star 9/30~10/4<br><br>
+        ※Yangzhou（中国 台湾）4star 10/10~10/14<br>
+        </dl>
+
+        </div>
+      </div>
+
+      <div class="mid_right_border">
+        <img style="width:100%" src="../TEST/IMG/mid1.jpg" >
+
+        <div class="mid_right_border_1">
+          <iframe width="282" height="220" src="https://www.youtube.com/embed/EG8cwhaL4RI"
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+          </iframe>
+              <p>
+              ジャパンツアー2018 第4戦 <br>
+              南あわじ・神戸淡嗚門自動車道全通<br>
+              20周年記念大会  女子決勝<br>
+              宮川紗麻亜／井桜藤子　vs　西堀健実／草野歩<br>
+              </p>
+        </div>
+
+        <div class="mid_right_border_2">
+                <img src="./IMG/center1.JPG" width="100%">
+        </div>
+        <div class="mid_right_border_3">
+          <dl class="main_text">
+            <dd>
+            【名前】宮川 紗麻亜<br>
+            【経歴】<br>
+             八王子実践高等学校卒<br>
+             日本女子体育大学卒<br>
+             GSSサンビームス(Vチャレンジリーグ)<br>
+             2011年よりビーチバレーボールへ転校<br><br>
+            </dd>
+            <dd>
+             【バレーボールの主な戦績】<br>
+             2011年新人賞<br>
+             【2011年】<br>
+             JBVツアー第1戦 ファイティンビーチバレー東京オープン 第3位<br>
+             2011年新人賞<br><br>
+           </dd>
+           <dd>
+             【2013年】<br>
+             ビーチバレージャパン 準決勝<br><br>
+           </dd>
+           <dd>
+             【2014年】<br>
+             JVAツアー川崎大会 第3位><br><br>
+            </dd>
+            <dd>
+             【2015年】<br>
+             JBAツアー第2戦 東京オープン 3位<br><br>
+            </dd>
+            <dd>
+             【2016年】<br>
+             ジャパンビーチバレーボールツアー2016 第9戦 お台場大会/マイナビシリーズ 3位<br><br>
+            </dd>
+            <dd>
+             JBAサテライト第3戦 越谷大会/大石カップ 優勝<br>
+             JBAサテライト第4戦 岐阜大会 優勝<br><br>
+            </dd>
+            <dd>
+             【2017年】<br>
+             ジャパンビーチバレーボールツアー2017 第1戦東京大会 優勝<br><br>
+            </dd>
+            <dd>
+             【2018年】<br>
+             ジャパンビーチバレーボールツアー2018<br>
+             第4戦南あわじ・神戸淡嗚門自動車道全通20周年記念大会 優勝<br><br>
+            </dd>
+          </dl>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+  </body>
+</html>

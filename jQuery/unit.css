@@ -1,0 +1,21 @@
+.slide{
+  width:600px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.slide ul{
+  width:3000px;
+  list-style: none;
+  font-size: 0;
+}
+.slide ul li{
+  display: inline-block;
+}
+.slide button.prev{
+  position: absolute;
+  left: 0;
+}
+.slide button.next{
+  position: absolute;
+  right: 0;
+}

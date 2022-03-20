@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<script>
+<!--
+  document.addEventListener("DOMContentLoaded", function(){
+    var elms = document.querySelectorAll('.center .image');
+    for(var i = 0; i < elms.length; i++){
+      elms[i].addEventListener('click', function(){
+        imgChange(this);
+      });
+    }
+  });
+function imgChange(obj){
+  var elms = obj.parentNode.querySelectorAll('.image');
+  var len = elms.length;
+  for(var i = 0; i < elms.length; i++){
+    if(elms[i]==obj){
+      var curIndex = i;
+    }
+  }
+  if((len-1)==curIndex){
+    var nextIndex = 0;
+  } else {
+    var nextIndex = curIndex + 1;
+  }
+  var classNames = obj.className.split(' ');
+  for(var i = 0; i < classNames.length; i++){
+    if(classNames[i]=='show'){
+      classNames[i] = '';
+    }
+  }
+  if(classNames.length==1){
+    classNames = classNames[0];
+  } else {
+    classNames = classNames.join(' ');
+  }
+  while(classNames.indexOf('  ', 0) >= 0){
+    classNames = classNames.replace('  ', ' ');
+  }
+  obj.className = classNames;
+
+  nextClassName = elms[nextIndex].className + ' show';
+  while (nextClassName.indexOf('  ', 0) >= 0){
+    nextClassName = nextClassName.replace('  ', ' ');
+  }
+  elms[nextIndex].className = nextClassName;
+}
+
+//-->
+</script>
+
+    <style media="screen">
+      .center {
+        position: relative;
+      }
+      .center > div {
+        width: 300px;
+        height: 300px;
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+      .center > div > img {
+        width: 100%;
+        height: 100%;
+      }
+      .image.show {
+        z-index: 3;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="center">
+      <div class="image show"><img src="../IMG/FOBUGI.jpg" alt=""></div>
+      <div class="image show"><img src="../IMG/ONIBUGI.PNG" alt=""></div>
+      <div class="image show"><img src="../IMG/GOBUCO.PNG" alt=""></div>
+    </div>
+  </body>
+</html>

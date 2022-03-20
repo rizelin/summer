@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ポケモン</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+      $(function(){
+        $(".center").on("click", ".image", function(){
+          var len = $(this).parent().find(".image").length;
+          var ind = $(this).parent().find(".image").index($(this));
+            if((len-1) == ind){
+              var next = 0;
+            } else {
+              var next = ind+1;
+            }
+            $(this).removeClass("show");
+            $(this).parent().find(".image").eq(next).addClass("show");
+        });
+      });
+
+    </script>
+
+    <style media="screen">
+      .center{
+        position:relative;
+      }
+      .center > div {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: #FFFFFF;
+      }
+      .center > div > img {
+        width: 200px;
+        height: 200px;
+      }
+      .image.show{
+        z-index: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <div class="image"><img src="../IMG/FOBUGI.JPG" alt=""></div>
+      <div class="image"><img src="../IMG/ONIBUGI.PNG" alt=""></div>
+      <div class="image"><img src="../IMG/GOBUCO.PNG" alt=""></div>
+    </div>
+  </body>
+</html>
